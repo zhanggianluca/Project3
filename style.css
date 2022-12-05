@@ -1,0 +1,34 @@
+/* #9c7bbf Purple Mountain Majesty
+   #988daa Glossy Grape
+   #707984 Slate Grey
+   #444473 Purple Navy
+   #2b2963 St.Patrick's Blue
+*/
+
+body {
+    background-color: #2b2963;
+}
+
+#table {
+    font-family: 'Sora'; 
+}
+
+p {
+    color: white;
+    font-family: 'Sora'; 
+    font-size: 50px; 
+}
+
+form {
+    color: white; 
+    font-family: 'Sora'; 
+}
+
+button {
+    background-color: #444473;
+    font-family: 'Sora'; 
+}
+
+img {
+    width: 100px; 
+}
