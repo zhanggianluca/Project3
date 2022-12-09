@@ -10,22 +10,26 @@
     <script src="script.js"></script>
 </head>
 <body onload="initialize();">
-    <p>Choose how many dice you want to roll<img src="dice.png" alt="dice"></p>
-    
-    <form id="form">
-        <input type="radio" id="one" name="numDice" value="One">
-        <label for="One">ONE</label><br>
-        <input type="radio" id="two" name="numDice" value="Two">
-        <label for="Two">TWO</label><br>
-        <input type="radio" id="three" name="numDice" value="Three">
-        <label for="Three">THREE</label>
-    </form>
-    <button id="roll" onclick="roll();">Roll Dice</button>
-    <table id="table">
-        <tr>
-            <th>Roll</th>
-            <th>Result</th>
-        </tr>
-    </table>
+    <div id="header">
+        <h1>ROLLING DICE SIMULATOR<img src="dice.png" alt="dice"></h1>
+    </div>
+    <div id="content">
+        <p>Choose how many dice you want to roll</p>
+        <form id="form">
+            <input type="radio" id="one" name="numDice" value="One">
+            <label for="One">ONE</label><br>
+            <input type="radio" id="two" name="numDice" value="Two">
+            <label for="Two">TWO</label><br>
+            <input type="radio" id="three" name="numDice" value="Three">
+            <label for="Three">THREE</label>
+        </form>
+        <button id="roll" onclick="roll();">Roll Dice</button>
+        <table id="table">
+            <tr>
+                <th>Roll</th>
+                <th>Result</th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
