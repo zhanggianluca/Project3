@@ -11,25 +11,33 @@
 </head>
 <body onload="initialize();">
     <div id="header">
-        <h1>ROLLING DICE SIMULATOR<img src="dice.png" alt="dice"></h1>
+        <h1>ROLLING DICE SIMULATOR</h1>
     </div>
     <div id="content">
-        <p>Choose how many dice you want to roll</p>
+
+        <div id="form-div">
         <form id="form">
-            <input type="radio" id="one" name="numDice" value="One">
+            <p>Choose how many dice you want to roll</p>
+            <input type="radio" id="one" name="numDice" value="One" onclick="setMode(1);">
             <label for="One">ONE</label><br>
-            <input type="radio" id="two" name="numDice" value="Two">
+            <input type="radio" id="two" name="numDice" value="Two" onclick="setMode(2);">
             <label for="Two">TWO</label><br>
-            <input type="radio" id="three" name="numDice" value="Three">
+            <input type="radio" id="three" name="numDice" value="Three" onclick="setMode(3);">
             <label for="Three">THREE</label>
         </form>
         <button id="roll" onclick="roll();">Roll Dice</button>
-        <table id="table">
-            <tr>
-                <th>Roll</th>
-                <th>Result</th>
-            </tr>
-        </table>
+        </div>
+
+        <div id="table-div">
+            <table id="table">
+                <tr>
+                    <th>Number</th>
+                    <th>Frequency</th>
+                </tr>
+            </table>
+        </div>
+
     </div>
+    
 </body>
 </html>
