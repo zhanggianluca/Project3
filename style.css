@@ -27,7 +27,7 @@ body {
 #content {
     margin: 20px; 
     display: grid; 
-    grid-template-columns: 500px 300px 300px; 
+    grid-template-columns: 500px 400px 800px; 
 }
 
 p {
@@ -103,12 +103,27 @@ button {
 
 
 #table {
-    font-family: 'Sora'; 
+    font-family: 'Sora';
+    font-size: 30px; 
+    font-weight: 600; 
+    color: white;  
+    text-align: center;  
     width: 100%;
     background-color:#444473;   
 }
 
 th {
     background-color: #9c7bbf; 
+    color: black; 
     width: 50%;  
+}
+
+#data {
+    width: 100%; 
+    grid-column: 3; 
+    margin-left: 40px; 
+}
+
+#doubles, #triples, #mode, #mean, #median {
+    color: #9c7bbf; 
 }
